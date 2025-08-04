@@ -9,17 +9,25 @@ Neste artigo, vamos esclarecer as diferenças entre esses conceitos e discutir b
 
 ---
 
-## O que é a Arquitetura MVC?
+## O que é MVC?
+
+O padrão MVC surgiu na década de 1970, criado por Trygve Reenskaug durante seu trabalho com a linguagem Smalltalk na Xerox PARC. O objetivo era organizar a interface gráfica (UI) de forma mais limpa e desacoplada.
 
 A arquitetura MVC divide a aplicação em três camadas principais:
 
-- **Model (Modelo):** Representa os dados da aplicação e suas regras de negócio.
-- **View (Visão):** Responsável pela interface com o usuário.
-- **Controller (Controlador):** Intermedia a interação entre View e Model.
+Model: Representa os dados que a interface precisa exibir, e notifica as Views quando esses dados mudam.
+
+View: Representa visualmente os dados do Model (ex: botões, tabelas, gráficos).
+
+Controller: Recebe interações do usuário (cliques, digitação) e traduz isso em ações no Model ou na View.
 
 Essa separação permite isolar responsabilidades, facilitando a manutenção, testes e evolução da aplicação.
 
+**Ou seja: MVC não é um padrão de arquitetura de software completa, mas sim um padrão de arquitetura da interface do usuário.**
+
 ---
+
+
 
 ## O que são as Entidades JPA?
 
