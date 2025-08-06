@@ -7,6 +7,8 @@
 </head>
 <body>
     <form th:object="${produto}" th:action="@{/produtos}" method="post">
+    <h1 th:if="${produto.id == null}">Inclusão</h1>
+    <h1 th:unless="${produto.id == null}">Atualização</h1>
     <input type="hidden" th:field="*{id}" />
     Nome: <input type="text" th:field="*{nome}" /><br/>
     Preço: <input type="text" th:field="*{preco}" /><br/>
